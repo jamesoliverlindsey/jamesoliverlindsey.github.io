@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     top: 0px;
 
+
 }
 
 .fixed {
@@ -21,6 +22,7 @@ html, body {
     background: #ffffff;
     left: 144px;
     display: inherit;
+    width: 75%;
 }
 
 #headerImage{
@@ -40,6 +42,8 @@ html, body {
 #bio{
     font-size: initial;
     border: 1px solid blue;
+
+
 }
 
 #navbar{
@@ -49,6 +53,7 @@ html, body {
     padding: 3px;
     width: 100%;
     background: #ffffff;
+    text-align: center;
 }
 
 #content {
@@ -69,6 +74,7 @@ html, body {
     bottom: 0px;
     background: #ffffff;
     text-align: center;
+    padding: 3px;
 
 }
 
@@ -83,11 +89,26 @@ html, body {
         padding-right: 7.5%;
     }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 600px) {
     #content{
         padding-right: 1em;
     }
+    #myname {
+        font-size: 30px;
+    }
+    #headerImage {
+        width: 80px;
+    }
+    .header{
+        left: 80px;
+    }
+    .absolute {
+        position: absolute;
+        top: 80px;
+    }
 }
+
 @media (max-height: 500px) {
     #myname {
         font-size: 30px;
