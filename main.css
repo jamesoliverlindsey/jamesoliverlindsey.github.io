@@ -38,8 +38,8 @@ html, body {
 }
 
 #bio{
+    font-size: initial;
     border: 1px solid blue;
-
 }
 
 #navbar{
@@ -53,10 +53,53 @@ html, body {
 
 #content {
     /*border: 1px solid red;*/
-    margin: 2em 0 2em 0;
+    margin: 0 0 50px 0;
     padding: 0.5em 15% 0.5em 15%;
     position: relative;
-    top: 144px;
+    top: 100px;
+    display: inline-block;
 }
 
+#infobar{
+    z-index: 2;
+    border: 1px dotted green;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background: #ffffff;
+    text-align: center;
 
+}
+
+/* media queries to adapt page to phone nav nicely */
+@media (max-width: 1500px) and (min-width: 1000px) {
+    #content{
+        padding-right: 20%;
+    }
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+    #content{
+        padding-right: 7.5%;
+    }
+}
+@media (max-width: 500px) {
+    #content{
+        padding-right: 1em;
+    }
+}
+@media (max-height: 500px) {
+    #myname {
+        font-size: 30px;
+    }
+    #headerImage {
+        width: 80px;
+    }
+    .header{
+        left: 80px;
+    }
+    .absolute {
+        position: absolute;
+        top: 80px;
+    }
+}
