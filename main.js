@@ -12,11 +12,11 @@ function scrollCallBack() {
     var div_offset = parseInt(getComputedStyle(div).getPropertyValue("top"));
 
     console.log("if      :" + (div.classList.contains("absolute") && -delta > div_offset));
-    console.log("else if :" + (div.classList.contains("fixed") && -delta < 100));
+    console.log("else if :" + (div.classList.contains("fixed") && -delta < 144));
     if (div.classList.contains("absolute") && -delta > div_offset) {
         div.classList.add('fixed');
         div.classList.remove('absolute');
-    } else if (div.classList.contains("fixed") && -delta < 100) {
+    } else if (div.classList.contains("fixed") && -delta < 144) {
         div.classList.remove('fixed');
         div.classList.add('absolute');
     }

@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     top: 0px;
-    clear: both;
+
 }
 
 .fixed {
@@ -12,26 +12,25 @@ html, body {
 
 .absolute {
     position: absolute;
-    top: 150px;
+    top: 144px;
 }
 
 .header{
     display: inline-block;
     position: relative;
     background: #ffffff;
-
+    left: 144px;
+    display: inherit;
 }
 
 #headerImage{
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     width: 144px;
     position: absolute;
     display: inline-block;
-
 }
 
 #myname{
-    left: 20%;
     border: 1px solid purple;
     font-size: 40px;
     text-decoration: underline;
@@ -40,7 +39,7 @@ html, body {
 
 #bio{
     border: 1px solid blue;
-    left: 20%;
+
 }
 
 #navbar{
