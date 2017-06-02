@@ -2,8 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     top: 0px;
-
-
 }
 
 .fixed {
@@ -25,35 +23,46 @@ html, body {
     width: 75%;
 }
 
+.bar{
+    z-index: 2;
+    text-align: center;
+    padding: 3px;
+    background: #ffffff;
+    Left: 0px;
+    right: 0px
+}
+
 #headerImage{
     border-radius: 0 0 20px 20px;
     width: 144px;
     position: absolute;
     display: inline-block;
+
 }
 
 #myname{
     border: 1px solid purple;
     font-size: 40px;
     text-decoration: underline;
-    background: #ffffff;
+
 }
 
 #bio{
     font-size: initial;
     border: 1px solid blue;
-
-
 }
 
 #navbar{
-    z-index: 2;
     border: 1px solid green;
     border-radius: 0 0 10px 10px;
-    padding: 3px;
-    width: 100%;
-    background: #ffffff;
-    text-align: center;
+}
+
+#infobar{
+    border: 1px dotted green;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0px;
+
 }
 
 #content {
@@ -63,19 +72,6 @@ html, body {
     position: relative;
     top: 100px;
     display: inline-block;
-}
-
-#infobar{
-    z-index: 2;
-    border: 1px dotted green;
-    border-radius: 10px 10px 0 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    background: #ffffff;
-    text-align: center;
-    padding: 3px;
-
 }
 
 /* media queries to adapt page to phone nav nicely */
