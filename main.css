@@ -1,4 +1,8 @@
 html, body {
+    background-image: url("Resources/SchoolSunset.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     padding: 0;
     top: 0px;
@@ -7,11 +11,13 @@ html, body {
 .fixed {
     position: fixed;
     top: 0;
+    background-color: rgba(192,192,192, .8);
 }
 
 .absolute {
     position: absolute;
     top: 144px;
+    background-color: rgba(192,192,192, .5);
 }
 
 .header{
@@ -21,19 +27,27 @@ html, body {
     left: 144px;
     display: inherit;
     width: 75%;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
 }
 
 .bar{
     z-index: 2;
     text-align: center;
     padding: 3px;
-    background: #ffffff;
+    bgcolor: rgba(192,192,192, .5);
     Left: 0px;
-    right: 0px
+    right: 0px;
+
+}
+
+.TopPageContainer{
+    border: 1px solid black;
+    background-color: rgba(192,192,192, .5);
 }
 
 #headerImage{
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 0;
     width: 144px;
     position: absolute;
     display: inline-block;
@@ -62,6 +76,7 @@ html, body {
     border-radius: 10px 10px 0 0;
     position: fixed;
     bottom: 0px;
+    background-color: rgba(192,192,192, .7);
 
 }
 
